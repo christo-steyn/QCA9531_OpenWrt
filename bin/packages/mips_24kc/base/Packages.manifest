@@ -88,6 +88,24 @@ Size: 122279
 SHA256sum: 3fd7894309c72ffadfde24384c28a8689f16b42dbd7bc3ff43df5820add1c058
 Description:  It is intended to provide coupled DNS and DHCP service to a LAN.
 
+Package: ethtool
+Version: 5.10-1
+Depends: libc
+Source: package/network/utils/ethtool
+SourceName: ethtool
+License: GPL-2.0
+LicenseFiles: COPYING
+Section: net
+SourceDateEpoch: 1644392351
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: mips_24kc
+Installed-Size: 33445
+Filename: ethtool_5.10-1_mips_24kc.ipk
+Size: 34316
+SHA256sum: 4b2b00835cdf11fd603f3d2b5f7ce4f38ff6ab0602402679ff91aa6cc7a4e53a
+Description:  ethtool is a small utility for examining and tuning your ethernet-based
+ network interface
+
 Package: firewall
 Version: 2021-03-23-61db17ed-1
 Depends: libc, libubox20210516, libubus20210630, libuci20130104, libip4tc2, libip6tc2, libxtables12, kmod-ipt-core, kmod-ipt-conntrack, kmod-nf-conntrack6, kmod-ipt-nat
@@ -136,6 +154,25 @@ Filename: hostapd-common_2020-06-08-5a8b3662-38_mips_24kc.ipk
 Size: 12289
 SHA256sum: 0d0844966c6242e42c57109f249d0539cdaa81ebd3ca599f0c4e26258882e917
 Description:  hostapd/wpa_supplicant common support files
+
+Package: ip-tiny
+Version: 5.11.0-3
+Depends: libc, libnl-tiny1
+Provides: ip
+Alternatives: 200:/sbin/ip:/usr/libexec/ip-tiny
+Source: package/network/utils/iproute2
+SourceName: ip-tiny
+License: GPL-2.0
+Section: net
+SourceDateEpoch: 1644392351
+CPE-ID: cpe:/a:iproute2_project:iproute2
+Maintainer: Russell Senior <russell@personaltelco.net>
+Architecture: mips_24kc
+Installed-Size: 119913
+Filename: ip-tiny_5.11.0-3_mips_24kc.ipk
+Size: 120672
+SHA256sum: f2168e111181706b5819dd532bfae0b1be5b0667db5d144ab2da2fabcee3c80d
+Description:  Routing control utility (minimal)
 
 Package: iw
 Version: 5.9-8fab0c9e-1
@@ -218,6 +255,24 @@ Filename: libblobmsg-json20210516_2021-05-16-b14c4688-2_mips_24kc.ipk
 Size: 4448
 SHA256sum: 884620da42ea8619e0d9f6e40170d7ee5875d4bcfc8121c5f9f70917296a006b
 Description:  blobmsg <-> json conversion library
+
+Package: libgmp10
+Version: 6.2.1-1
+Depends: libc
+Provides: libgmp
+Source: package/libs/gmp
+SourceName: libgmp
+License: GPL-2.0-or-later
+Section: libs
+SourceDateEpoch: 1644392351
+ABIVersion: 10
+Architecture: mips_24kc
+Installed-Size: 216354
+Filename: libgmp10_6.2.1-1_mips_24kc.ipk
+Size: 217075
+SHA256sum: 3fa16d5772b3dc31ac0583b14717d6cdd121f346db0dc429765f38b80c7387ef
+Description:  GMP is a free library for arbitrary precision arithmetic, operating on
+ signed integers, rational numbers, and floating point numbers.
 
 Package: libiwinfo-data
 Version: 2021-04-30-c45f0b58-2.1
@@ -330,6 +385,42 @@ Description:  Lua is a powerful light-weight programming language designed for e
  applications. Lua is also frequently used as a general-purpose, stand-alone 
  language. Lua is free software.
  This package contains the Lua shared libraries, needed by other programs.
+
+Package: libncurses6
+Version: 6.2-3
+Depends: libc, terminfo
+Provides: libncursesw, libncurses, libncursesw6
+Source: package/libs/ncurses
+SourceName: libncurses
+License: MIT
+LicenseFiles: README
+Section: libs
+SourceDateEpoch: 1644392351
+ABIVersion: 6
+Architecture: mips_24kc
+Installed-Size: 151198
+Filename: libncurses6_6.2-3_mips_24kc.ipk
+Size: 147643
+SHA256sum: e652b344d0576e88a2f824cdb597ca8a5da259fd7680ff81b80f107b9534ebcd
+Description:  Terminal handling library (Unicode)
+
+Package: libnettle8
+Version: 3.6-1
+Depends: libc, libgmp10
+Provides: libnettle
+Source: package/libs/nettle
+SourceName: libnettle
+License: GPL-2.0-or-later
+LicenseFiles: COPYING
+Section: libs
+SourceDateEpoch: 1644392351
+ABIVersion: 8
+Architecture: mips_24kc
+Installed-Size: 306800
+Filename: libnettle8_3.6-1_mips_24kc.ipk
+Size: 306761
+SHA256sum: dce576a3e6887a52b200803bb89e37c7934728119d215019f74e51f519441fd8
+Description:  GNU crypto library
 
 Package: libnl-tiny1
 Version: 2020-08-05-c291088f-2
@@ -681,6 +772,26 @@ Size: 50420
 SHA256sum: 75198bfa0d4a93fad6bc53083611307ef7e9bca073ad70e5fef32880274cce7f
 Description:  OpenWrt system process manager
 
+Package: resolveip
+Version: 2
+Depends: libc
+Source: package/network/utils/resolveip
+SourceName: resolveip
+License: GPL-2.0
+Section: utils
+SourceDateEpoch: 1644392351
+Maintainer: Jo-Philipp Wich <jo@mein.io>
+Architecture: mips_24kc
+Installed-Size: 1718
+Filename: resolveip_2_mips_24kc.ipk
+Size: 2628
+SHA256sum: 564f96bb4187c13884e8c2c8459fb0f649f655d00653f5c991a84746f0ea845a
+Description:  This package contains the small resolveip utility which
+ can be used by scripts to turn host names into numeric
+ IP addresses. It supports IPv4 and IPv6 resolving and
+ has a configurable timeout to guarantee a certain maximum
+ runtime in case of slow or defunct DNS servers.
+
 Package: rpcd-mod-file
 Version: 2021-03-11-ccb75178-1
 Depends: libc, libubus20210630, libubox20210516, rpcd
@@ -713,6 +824,22 @@ Size: 7436
 SHA256sum: 5661e06b95c3232d337811f10cc0565f9120d3921c50facfd6273da8853bd211
 Description:  Provides ubus calls for accessing iwinfo data.
 
+Package: rpcd-mod-rpcsys
+Version: 2021-03-11-ccb75178-1
+Depends: libc, libubus20210630, libubox20210516, rpcd
+Source: package/system/rpcd
+SourceName: rpcd-mod-rpcsys
+License: ISC
+Section: utils
+SourceDateEpoch: 1644392351
+Maintainer: Jo-Philipp Wich <jo@mein.io>
+Architecture: mips_24kc
+Installed-Size: 3686
+Filename: rpcd-mod-rpcsys_2021-03-11-ccb75178-1_mips_24kc.ipk
+Size: 4466
+SHA256sum: 8381241560b2e3565f2178bd38cc33ce05825b815f474ca3234ebf868d697b60
+Description:  Provides ubus calls for sysupgrade and password changing.
+
 Package: rpcd
 Version: 2021-03-11-ccb75178-1
 Depends: libc, libubus20210630, libubox20210516, libuci20130104, libblobmsg-json20210516, libjson-c5
@@ -730,6 +857,21 @@ SHA256sum: 6e9240f94c049959a2855a35189bd0d9b5526aa200a49cddbff5eec05aac34d8
 Description:  This package provides the UBUS RPC backend server to expose various
  functionality to frontend programs via JSON-RPC.
 
+Package: rssileds
+Version: 3
+Depends: libc, libiwinfo20210430, libnl-tiny1, libubox20210516, libuci20130104
+Source: package/network/utils/rssileds
+SourceName: rssileds
+Section: net
+SourceDateEpoch: 1644392351
+Maintainer: Daniel Golle <daniel@makrotopia.org>
+Architecture: mips_24kc
+Installed-Size: 3272
+Filename: rssileds_3_mips_24kc.ipk
+Size: 4054
+SHA256sum: e79c22b2846b261166d3559c29f4febd5d312784ed23243e613990fe65581f41
+Description:  A small process written in C to update the signal-strength indicator LEDs
+
 Package: swconfig
 Version: 12
 Depends: libc, libuci20130104, libnl-tiny1
@@ -745,6 +887,22 @@ Filename: swconfig_12_mips_24kc.ipk
 Size: 8123
 SHA256sum: 24fc7060573287258b3e3247d2b4ea270ea159f7d5927e48649040335782019a
 Description:  Switch configuration utility
+
+Package: terminfo
+Version: 6.2-3
+Depends: libc
+Source: package/libs/ncurses
+SourceName: terminfo
+License: MIT
+LicenseFiles: README
+Section: libs
+SourceDateEpoch: 1644392351
+Architecture: mips_24kc
+Installed-Size: 7228
+Filename: terminfo_6.2-3_mips_24kc.ipk
+Size: 7954
+SHA256sum: e6c58b11f7228d133e21e47610b5f8bb0e05735a2b452428c7619543ed762bfa
+Description:  Terminal Info Database (ncurses)
 
 Package: ubox
 Version: 2020-10-25-9ef88681-2
@@ -967,6 +1125,23 @@ Size: 2760
 SHA256sum: 470d8721e3a583b859e1efcfa64e06284239e3667fd416d5fceb2f87b7c1fc9d
 Description:  Wireless Regulatory Database
 
+Package: wireless-tools
+Version: 29-6
+Depends: libc
+Source: package/network/utils/wireless-tools
+SourceName: wireless-tools
+License: GPL-2.0
+Section: net
+SourceDateEpoch: 1644392351
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: mips_24kc
+Installed-Size: 19939
+Filename: wireless-tools_29-6_mips_24kc.ipk
+Size: 20712
+SHA256sum: 61f26fb70625694eee6b492197cdaa8f32663cd3f011eb798fc653c85bcbd8fb
+Description:  This package contains a collection of tools for configuring wireless
+ adapters implementing the "Linux Wireless Extensions".
+
 Package: wpad-basic-wolfssl
 Version: 2020-06-08-5a8b3662-38
 Depends: libc, libnl-tiny1, hostapd-common, libubus20210630, libwolfssl4.8.1.66253b90
@@ -1002,4 +1177,22 @@ Filename: wwan_2019-04-29-5_mips_24kc.ipk
 Size: 9816
 SHA256sum: 0d821ad1aa184d05a27dc2f77dee8e391be572c0296d3922f354582781eaa231
 Description:  Generic OpenWrt 3G/4G proto handler
+
+Package: zlib
+Version: 1.2.11-3
+Depends: libc
+Source: package/libs/zlib
+SourceName: zlib
+License: Zlib
+LicenseFiles: README
+Section: libs
+SourceDateEpoch: 1644392351
+CPE-ID: cpe:/a:gnu:zlib
+Architecture: mips_24kc
+Installed-Size: 37899
+Filename: zlib_1.2.11-3_mips_24kc.ipk
+Size: 38681
+SHA256sum: c4a5c88fc5f80548f55d57a84b1ac8da579c211622d366a27dfabdb1ee4fc077
+Description:  zlib is a lossless data-compression library.
+ This package includes the shared library.
 

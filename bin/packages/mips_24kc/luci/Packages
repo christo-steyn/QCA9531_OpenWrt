@@ -24,6 +24,17 @@ Size: 7551
 SHA256sum: 0dcabaee7b811e49a1e8f8c20d40d8d23ea21453623d4fa99e764bde889d7ffa
 Description:  LuCI HTTP utility library
 
+Package: luci-app-attendedsysupgrade
+Version: git-23.208.40332-e4c4633
+Depends: libc, luci-base, attendedsysupgrade-common, cgi-io
+Section: luci
+Architecture: all
+Installed-Size: 4421
+Filename: luci-app-attendedsysupgrade_git-23.208.40332-e4c4633_all.ipk
+Size: 5268
+SHA256sum: ad0d52da00892f370662aec31bd5e0d82ec4fd13363336ea19dbe8b58fdc4b93
+Description:  LuCI support for attended sysupgrades
+
 Package: luci-app-firewall
 Version: git-23.208.40332-e4c4633
 Depends: libc, firewall
@@ -35,6 +46,17 @@ Filename: luci-app-firewall_git-23.208.40332-e4c4633_all.ipk
 Size: 15121
 SHA256sum: ab91d8ec2bac9d6d1a1fc1688a903b0abd5fb45e9c2e04bfd1445691d7de37dc
 Description:  Firewall and Portforwarding application
+
+Package: luci-app-ledtrig-rssi
+Version: git-23.208.40332-e4c4633
+Depends: libc, rssileds
+Section: luci
+Architecture: all
+Installed-Size: 559
+Filename: luci-app-ledtrig-rssi_git-23.208.40332-e4c4633_all.ipk
+Size: 1418
+SHA256sum: 571e449d2fa7f3b8b2ef4d0501352f9610a058b2a796fe350be2a213acc37464
+Description:  LuCI Support for ledtrigger rssi
 
 Package: luci-app-opkg
 Version: git-23.208.40332-e4c4633
@@ -117,6 +139,29 @@ Size: 989
 SHA256sum: 08070a0a9fd47c3e806ba24e07aaa8f4058e3a9ea75911d9b8f4b6328252c913
 Description:  LuCI Administration - full-featured for full control
 
+Package: luci-mod-dashboard
+Version: git-23.208.40332-e4c4633
+Depends: libc, luci-base, libiwinfo20210430
+License: Apache-2.0
+Section: luci
+Architecture: all
+Installed-Size: 6681
+Filename: luci-mod-dashboard_git-23.208.40332-e4c4633_all.ipk
+Size: 7598
+SHA256sum: 453682c580caf2aec4b422a824b085aaa457fb348db7418c703c9e3273f5d790
+Description:  LuCI Dashboard Pages
+
+Package: luci-mod-failsafe
+Version: git-23.208.40332-e4c4633
+Depends: libc, luci-base
+Section: luci
+Architecture: all
+Installed-Size: 3941
+Filename: luci-mod-failsafe_git-23.208.40332-e4c4633_all.ipk
+Size: 4796
+SHA256sum: 1ba472602b623cd45ae3fcaa199b0b527eebec50e9a5ce072c286a900f95763e
+Description:  LuCI Fail-Safe - Fail-Safe sysupgrade module
+
 Package: luci-mod-network
 Version: git-23.208.40332-e4c4633
 Depends: libc, luci-base, libiwinfo-lua, rpcd-mod-iwinfo
@@ -164,6 +209,17 @@ Filename: luci-proto-ipv6_git-23.208.40332-e4c4633_all.ipk
 Size: 3485
 SHA256sum: de19b4d41b145b26a56d0951c0362d4c4af64415af5836d1730f6bd27b62b17d
 Description:  Support for DHCPv6/6in4/6to4/6rd/DS-Lite
+
+Package: luci-proto-openconnect
+Version: git-23.208.40332-e4c4633
+Depends: libc, openconnect
+Section: luci
+Architecture: all
+Installed-Size: 2449
+Filename: luci-proto-openconnect_git-23.208.40332-e4c4633_all.ipk
+Size: 3301
+SHA256sum: 7557e44bde447088ae656f6b3548a4ed4bc3b48f6fca3ac1d0e26d64a27b5b10
+Description:  Support for OpenConnect VPN
 
 Package: luci-proto-ppp
 Version: git-23.208.40332-e4c4633

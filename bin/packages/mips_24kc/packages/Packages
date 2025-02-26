@@ -1,3 +1,35 @@
+Package: attendedsysupgrade-common
+Version: 0.3-1
+Depends: libc, rpcd, rpcd-mod-rpcsys
+License: GPL-2.0
+Section: utils
+Architecture: all
+Installed-Size: 514
+Filename: attendedsysupgrade-common_0.3-1_all.ipk
+Size: 1546
+SHA256sum: 3efd8a1f13e7f77ace15b2fb1eccf740ee5b5b077ad582ed20da37595ad57398
+Description:  Common needed files for attendedsysupgrade tool
+ 
+ Manages dependencies and brings settings used by clients.
+ 
+ UCI options:
+ 
+ * attendedsysupgrade.server.url
+ URL of compatible upgrade server [1]
+ 
+ * attendedsysupgrade.client.upgrade_packages
+ Client should request image also if no new release but new packages
+ upgrade are available.
+ 
+ * attendedsysupgrade.client.advanced_mode
+ Offer advanced options like editing packages before request and show
+ additional information.
+ 
+ * attendedsysupgrade.client.auto_search
+ Tells the client to automattically search for upgrades
+ 
+ [1]: https://github.com/aparcar/asu
+
 Package: cgi-io
 Version: 2022-08-10-901b0f04-21
 Depends: libc, libubox20210516, libubus20210630
@@ -23,4 +55,177 @@ SHA256sum: 566022a911a420b45ea7249fffc1a22d7a04dce5785a8a267eb583620073f3bd
 Description:  Iperf is a modern alternative for measuring TCP and UDP bandwidth
  performance, allowing the tuning of various parameters and
  characteristics.
+
+Package: libgnutls
+Version: 3.7.1-2
+Depends: libc, libnettle8, libgmp10, libatomic1
+License: LGPL-2.1-or-later
+Section: libs
+CPE-ID: cpe:/a:gnu:gnutls
+Architecture: mips_24kc
+Installed-Size: 820897
+Filename: libgnutls_3.7.1-2_mips_24kc.ipk
+Size: 819698
+SHA256sum: aaee2255e459bc1cec0c95a40d7cb71356ea0c8ea8ad4a7f54078ef28b71e502
+Description:  GnuTLS is a secure communications library implementing the SSL, TLS
+ and DTLS protocols and technologies around them. It provides a simple
+ C language application programming interface (API) to access the secure
+ communications protocols as well as APIs to parse and write X.509, PKCS12,
+ OpenPGP and other required structures. It is aimed to be portable and
+ efficient with focus on security and interoperability.
+ This package contains the GnuTLS shared library, needed by other programs.
+
+Package: libloragw-tests
+Version: 5.0.1-2
+Depends: libc, libloragw
+Section: net
+Architecture: mips_24kc
+Installed-Size: 15041
+Filename: libloragw-tests_5.0.1-2_mips_24kc.ipk
+Size: 15730
+SHA256sum: ced4f0be04953f7db44dfa27f3b31d3ea5a4771bf09d0fab7d7d123dbd714924
+Description:  Test programs for libloragw to check functionality
+
+Package: libloragw-utils
+Version: 5.0.1-2
+Depends: libc, libloragw
+Section: net
+Architecture: mips_24kc
+Installed-Size: 28789
+Filename: libloragw-utils_5.0.1-2_mips_24kc.ipk
+Size: 29465
+SHA256sum: ef7bda33627ba59ad7b32014423b6fc2c127c137c55ab8fe626404980380ae86
+Description:  Utility programs for libloragw
+
+Package: libloragw
+Version: 5.0.1-2
+Depends: libc, kmod-spi-dev
+Section: libs
+Architecture: mips_24kc
+Installed-Size: 22871
+Filename: libloragw_5.0.1-2_mips_24kc.ipk
+Size: 23600
+SHA256sum: fc9514bcb6027ecc0b614cb4b06a1d452c18cc4ad2cc8d8f2a0c86de8c0febad
+Description:  Driver/HAL library for Semtech SX1301 multi-channel modem and
+ SX1257/SX1255 RF transceivers.
+
+Package: libminiupnpc
+Version: 2.2.1-1
+Depends: libc
+License: BSD-3-Clause
+Section: libs
+CPE-ID: cpe:/a:miniupnp_project:miniupnp
+Architecture: mips_24kc
+Installed-Size: 18526
+Filename: libminiupnpc_2.2.1-1_mips_24kc.ipk
+Size: 19302
+SHA256sum: 25402608e1759149bd9aa607cdf3a7043c6af234c0c64f4a2ac63b7873acd7e8
+Description:  Lightweight UPnP library
+
+Package: libnatpmp1
+Version: 20150609-3
+Depends: libc
+Provides: libnatpmp
+License: BSD-3-Clause
+Section: libs
+ABIVersion: 1
+Architecture: mips_24kc
+Installed-Size: 3141
+Filename: libnatpmp1_20150609-3_mips_24kc.ipk
+Size: 4041
+SHA256sum: ae2fe085463d128e47f51b7d34c834d7b02a507da29758c552ea3228144d39fd
+Description:  libnatpmp is an attempt to make a portable and fully compliant implementation
+ of the protocol for the client side. It is based on non blocking sockets and
+ all calls of the API are asynchronous. It is therefore very easy to integrate
+ the NAT-PMP code to any event driven code.
+ This package contains the shared library.
+
+Package: libtasn1
+Version: 4.16.0-1
+Depends: libc
+License: LGPL-2.1-or-later
+Section: libs
+CPE-ID: cpe:/a:gnu:libtasn1
+Architecture: mips_24kc
+Installed-Size: 27637
+Filename: libtasn1_4.16.0-1_mips_24kc.ipk
+Size: 28282
+SHA256sum: 48811e93920c30560dabbc05a14214c40b0e60ea8c9b2660e80d024975dce004
+Description:  This is a library for Abstract Syntax Notation One (ASN.1) and
+ Distinguish Encoding Rules (DER) manipulation.
+
+Package: libxml2
+Version: 2.9.14-1
+Depends: libc, libpthread, zlib
+License: MIT
+Section: libs
+CPE-ID: cpe:/a:xmlsoft:libxml2
+Architecture: mips_24kc
+Installed-Size: 433669
+Filename: libxml2_2.9.14-1_mips_24kc.ipk
+Size: 430984
+SHA256sum: 8344d4b2da2644d7dcdfc5f4a8298df2cbc17639c4b74b514e482190d47fbfe0
+Description:  A library for manipulating XML and HTML resources.
+
+Package: openconnect
+Version: 8.20-1
+Depends: libc, libxml2, kmod-tun, resolveip, vpnc-scripts, libgnutls, libtasn1
+License: LGPL-2.1-or-later
+Section: net
+CPE-ID: cpe:/a:infradead:openconnect
+Architecture: mips_24kc
+Installed-Size: 153970
+Filename: openconnect_8.20-1_mips_24kc.ipk
+Size: 153662
+SHA256sum: 6df4c5d948da7f47005344ae10be4c9be34d37ab2d52bcbc5ac9a5f0f51cbbea
+Description:  A VPN client compatible with several SSL VPN implementations (ocserv, Cisco AnyConnect, Juniper, Palo Alto)
+ 
+ OpenConnect is an SSL VPN client initially created to support Cisco's
+ AnyConnect SSL VPN. It has since been extended to support the Pulse Connect
+ Secure VPN (formerly known as Juniper Network Connect or Junos Pulse) and
+ the Palo Alto Networks GlobalProtect SSL VPN.
+ 
+ A corresponding OpenConnect VPN server implementation can be found in the
+ ocserv package.
+
+Package: procps-ng
+Version: 3.3.16-3
+Depends: libc, libncurses6
+License: GPL-2.0-or-later
+Section: utils
+Architecture: mips_24kc
+Installed-Size: 25067
+Filename: procps-ng_3.3.16-3_mips_24kc.ipk
+Size: 25783
+SHA256sum: ba87a005edccb2d4b7150c46b3bfa5b1398d53bb24978b031ddceaf5b2f5d182
+Description:  procps is a set of command line and full-screen utilities that provide information out of the pseudo-filesystem
+ most commonly located at /proc. This filesystem provides a simple interface to the kernel data structures.
+ The programs of procps generally concentrate on the structures that describe the processess running on the system.
+ 
+ NOTE: some utilities provided by procps-ng packages (ps, uptime, kill, ...) are installed as busybox applets, by default.
+ Conflicting applets should be removed from the build to avoid file conflicts.
+
+Package: vpnc-scripts
+Version: 20151220-2
+Depends: libc
+Section: net
+Architecture: all
+Installed-Size: 2286
+Filename: vpnc-scripts_20151220-2_all.ipk
+Size: 3083
+SHA256sum: ae677e5d4a76e075a436688fc2b34846d0963fefc4eedd6237e9e3e36ec513e7
+Description:  This package contains the vpnc-script which is used by vpnc
+ and OpenConnect to configure the tunnel interface.
+
+Package: zerotier
+Version: 1.12.1-1
+Depends: libc, libpthread, libstdcpp6, kmod-tun, ip, libminiupnpc, libnatpmp1, libatomic1
+License: BSL 1.1
+Section: net
+Architecture: mips_24kc
+Installed-Size: 488954
+Filename: zerotier_1.12.1-1_mips_24kc.ipk
+Size: 488766
+SHA256sum: 7694c42c65566a58dfadd8eab6c463c50b082e19101e180a6936235b6e2e1679
+Description:  ZeroTier creates a global provider-independent virtual private cloud network.
 
