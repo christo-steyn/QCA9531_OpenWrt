@@ -3,7 +3,7 @@ Build-Depends: golang/host
 
 Package: crowdsec-firewall-bouncer
 Version: 0.0.21-0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(PACKAGE_iptables||PACKAGE_nftables) @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||x86_64) +crowdsec
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(PACKAGE_iptables||PACKAGE_nftables) @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||x86_64)
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -24,7 +24,7 @@ Description:   Crowdsec bouncer written in golang for firewalls.
   You must install iptables+ipset or nftables.
 
   This package contains the main program.
-https://github.com/crowdsecurity/crowdsec-firewall-bouncer/
+https://github.com/crowdsecurity/cs-firewall-bouncer/
 Gerald Kerma <gandalf@gk2.net>
 @@
 

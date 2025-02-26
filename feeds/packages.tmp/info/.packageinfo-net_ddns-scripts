@@ -35,7 +35,7 @@ Version: 2.8.2-12
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
 Conflicts: 
 Menu-Depends: 
-Provides: 
+Provides: ddns-scripts_service
 Section: net
 Category: Network
 Repository: base
@@ -54,7 +54,7 @@ Version: 2.8.2-12
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread ddns-scripts +curl
 Conflicts: 
 Menu-Depends: 
-Provides: 
+Provides: ddns-scripts_cloudflare.com-v4
 Section: net
 Category: Network
 Repository: base
@@ -73,7 +73,7 @@ Version: 2.8.2-12
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread ddns-scripts +curl
 Conflicts: 
 Menu-Depends: 
-Provides: 
+Provides: ddns-scripts_freedns_42_pl
 Section: net
 Category: Network
 Repository: base
@@ -92,7 +92,7 @@ Version: 2.8.2-12
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread ddns-scripts +curl
 Conflicts: 
 Menu-Depends: 
-Provides: 
+Provides: ddns-scripts_godaddy.com-v1
 Section: net
 Category: Network
 Repository: base
@@ -111,7 +111,7 @@ Version: 2.8.2-12
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread ddns-scripts +curl
 Conflicts: 
 Menu-Depends: 
-Provides: 
+Provides: ddns-scripts_digitalocean.com-v2
 Section: net
 Category: Network
 Repository: base
@@ -137,7 +137,7 @@ Version: 2.8.2-12
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread ddns-scripts
 Conflicts: 
 Menu-Depends: 
-Provides: 
+Provides: ddns-scripts_no-ip_com
 Section: net
 Category: Network
 Repository: base
@@ -156,7 +156,7 @@ Version: 2.8.2-12
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread ddns-scripts +bind-client
 Conflicts: 
 Menu-Depends: 
-Provides: 
+Provides: ddns-scripts_nsupdate
 Section: net
 Category: Network
 Repository: base
@@ -181,7 +181,7 @@ Version: 2.8.2-12
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread ddns-scripts +curl +openssl-util
 Conflicts: 
 Menu-Depends: 
-Provides: 
+Provides: ddns-scripts_route53-v1
 Section: net
 Category: Network
 Repository: base
@@ -205,7 +205,7 @@ Version: 2.8.2-12
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread ddns-scripts +curl +giflib-utils
 Conflicts: 
 Menu-Depends: 
-Provides: 
+Provides: ddns-scripts_cnkuai_cn
 Section: net
 Category: Network
 Repository: base

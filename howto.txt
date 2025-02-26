@@ -1,0 +1,26 @@
+Embstar OpenWrt SDK Quick Guide
+
+1.Prepare Ubuntu16.04 or Ubuntu18.04.
+
+2.Install the following prerequisite packages
+sudo apt update
+sudo apt install build-essential ccache ecj fastjar file g++ gawk \
+gettext git java-propose-classpath libelf-dev libncurses5-dev \
+libncursesw5-dev libssl-dev python python2.7-dev python3 unzip wget \
+python3-distutils python3-setuptools python3-dev rsync subversion \
+swig time xsltproc zlib1g-dev
+3.Get latest sources from Github
+git clone https://github.com/Embstar/QCA9531_OpenWrt.git
+./scripts/feeds update -a
+./scripts/feeds install -a
+4.Build
+make V=s
+5.Update Firmware from u-boot
+setenv ipaddr 192.168.0.10
+setenv serverip 192.168.0.3
+tftp 0x80060000 openwrt-ath79-generic-embstar-qca9531-squashfs-sysupgrade.bin
+erase 0x9f050000 +0xfa0000
+cp.b $fileaddr 0x9f050000 0xfa0000
+setenv bootcmd "bootm 0x9f050000 || bootm 0x9fe80000"
+saveenv
+6.Done

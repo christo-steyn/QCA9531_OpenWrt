@@ -22,7 +22,7 @@ Nick Hainke <vincent@systemli.org>
 Package: wg-installer-server-hotplug-babeld
 Menu: 1
 Version: 0
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread wg-installer-server +coreutils-realpath
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread wg-installer-server
 Conflicts: 
 Menu-Depends: 
 Provides: 

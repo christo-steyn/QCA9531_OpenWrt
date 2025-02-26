@@ -3,9 +3,9 @@ Source-Makefile: feeds/packages/libs/libwebsockets/Makefile
 Package: libwebsockets-openssl
 Version: 3.1.0-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +zlib +libcap +libopenssl
-Conflicts: 
+Conflicts: libwebsockets-full
 Menu-Depends: 
-Provides: libwebsockets
+Provides: 
 Build-Variant: openssl
 Section: libs
 Category: Libraries
@@ -24,7 +24,7 @@ Karl Palsson <karlp@etactica.com>
 Package: libwebsockets-mbedtls
 Version: 3.1.0-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +zlib +libcap +libmbedtls
-Conflicts: 
+Conflicts: libwebsockets-openssl
 Menu-Depends: 
 Provides: libwebsockets
 Build-Variant: mbedtls
@@ -47,7 +47,7 @@ Version: 3.1.0-2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +zlib +libcap +libopenssl +libuv
 Conflicts: 
 Menu-Depends: 
-Provides: libwebsockets
+Provides: libwebsockets libwebsockets-openssl
 Build-Variant: full
 Section: libs
 Category: Libraries

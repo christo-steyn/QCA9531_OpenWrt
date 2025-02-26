@@ -6,7 +6,7 @@ Build-Types: host
 Package: mariadb-client
 Menu: 1
 Submenu: Database
-Version: 10.4.22-3
+Version: 10.4.26-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +BUILD_NLS:libiconv-full +libatomic +libopenssl +libstdcpp +zlib +libedit
 Conflicts: 
 Menu-Depends: 
@@ -16,7 +16,7 @@ Category: Utilities
 Repository: base
 Title: MariaDB database client
 Maintainer: Michal Hrusecky <Michal@Hrusecky.net>
-Source: mariadb-10.4.22.tar.gz
+Source: mariadb-10.4.26.tar.gz
 License: GPL-2.0-only
 LicenseFiles: COPYING THIRDPARTY
 Type: ipkg
@@ -33,7 +33,7 @@ Michal Hrusecky <Michal@Hrusecky.net>
 
 Package: mariadb-client-extra
 Submenu: Database
-Version: 10.4.22-3
+Version: 10.4.26-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread mariadb-client
 Conflicts: 
 Menu-Depends: 
@@ -43,7 +43,7 @@ Category: Utilities
 Repository: base
 Title: MariaDB database client extra
 Maintainer: Michal Hrusecky <Michal@Hrusecky.net>
-Source: mariadb-10.4.22.tar.gz
+Source: mariadb-10.4.26.tar.gz
 License: GPL-2.0-only
 LicenseFiles: COPYING THIRDPARTY
 Type: ipkg
@@ -70,7 +70,7 @@ Michal Hrusecky <Michal@Hrusecky.net>
 Package: mariadb-server
 Menu: 1
 Submenu: Database
-Version: 10.4.22-3
+Version: 10.4.26-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread mariadb-server-base
 Conflicts: 
 Menu-Depends: 
@@ -80,7 +80,7 @@ Category: Utilities
 Repository: base
 Title: MariaDB database server
 Maintainer: Michal Hrusecky <Michal@Hrusecky.net>
-Source: mariadb-10.4.22.tar.gz
+Source: mariadb-10.4.26.tar.gz
 License: GPL-2.0-only
 LicenseFiles: COPYING THIRDPARTY
 Type: ipkg
@@ -101,7 +101,7 @@ Michal Hrusecky <Michal@Hrusecky.net>
 
 Package: mariadb-server-base
 Submenu: Database
-Version: 10.4.22-3
+Version: 10.4.26-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +BUILD_NLS:libiconv-full +libatomic +libopenssl +libstdcpp +zlib +libaio +liblzma +libpcre +resolveip +sudo
 Conflicts: 
 Menu-Depends: 
@@ -112,7 +112,7 @@ Repository: base
 Title: MariaDB database server base
 Maintainer: Michal Hrusecky <Michal@Hrusecky.net>
 Require-User: mariadb=376:mariadb=376
-Source: mariadb-10.4.22.tar.gz
+Source: mariadb-10.4.26.tar.gz
 License: GPL-2.0-only
 LicenseFiles: COPYING THIRDPARTY
 Type: ipkg
@@ -128,7 +128,7 @@ Michal Hrusecky <Michal@Hrusecky.net>
 
 Package: mariadb-server-extra
 Submenu: Database
-Version: 10.4.22-3
+Version: 10.4.26-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread mariadb-server
 Conflicts: 
 Menu-Depends: 
@@ -138,7 +138,7 @@ Category: Utilities
 Repository: base
 Title: MariaDB database server extra
 Maintainer: Michal Hrusecky <Michal@Hrusecky.net>
-Source: mariadb-10.4.22.tar.gz
+Source: mariadb-10.4.26.tar.gz
 License: GPL-2.0-only
 LicenseFiles: COPYING THIRDPARTY
 Type: ipkg
@@ -180,7 +180,7 @@ Michal Hrusecky <Michal@Hrusecky.net>
 
 Package: mariadb-server-plugin-auth-ed25519
 Submenu: Database
-Version: 10.4.22-3
+Version: 10.4.26-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread mariadb-server
 Conflicts: 
 Menu-Depends: 
@@ -190,7 +190,7 @@ Category: Utilities
 Repository: base
 Title: mariadb-server plugin
 Maintainer: Michal Hrusecky <Michal@Hrusecky.net>
-Source: mariadb-10.4.22.tar.gz
+Source: mariadb-10.4.26.tar.gz
 License: GPL-2.0-only
 LicenseFiles: COPYING THIRDPARTY
 Type: ipkg
@@ -204,7 +204,7 @@ Michal Hrusecky <Michal@Hrusecky.net>
 
 Package: mariadb-server-plugin-auth-gssapi
 Submenu: Database
-Version: 10.4.22-3
+Version: 10.4.26-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread mariadb-server +PACKAGE_mariadb-server-plugin-auth-gssapi:krb5-libs
 Conflicts: 
 Menu-Depends: 
@@ -214,7 +214,7 @@ Category: Utilities
 Repository: base
 Title: mariadb-server plugin
 Maintainer: Michal Hrusecky <Michal@Hrusecky.net>
-Source: mariadb-10.4.22.tar.gz
+Source: mariadb-10.4.26.tar.gz
 License: GPL-2.0-only
 LicenseFiles: COPYING THIRDPARTY
 Type: ipkg
@@ -228,7 +228,7 @@ Michal Hrusecky <Michal@Hrusecky.net>
 
 Package: mariadb-server-plugin-auth-pam
 Submenu: Database
-Version: 10.4.22-3
+Version: 10.4.26-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread mariadb-server +PACKAGE_mariadb-server-plugin-auth-pam:libpam
 Conflicts: 
 Menu-Depends: 
@@ -238,7 +238,7 @@ Category: Utilities
 Repository: base
 Title: mariadb-server plugin
 Maintainer: Michal Hrusecky <Michal@Hrusecky.net>
-Source: mariadb-10.4.22.tar.gz
+Source: mariadb-10.4.26.tar.gz
 License: GPL-2.0-only
 LicenseFiles: COPYING THIRDPARTY
 Type: ipkg
@@ -252,7 +252,7 @@ Michal Hrusecky <Michal@Hrusecky.net>
 
 Package: mariadb-server-plugin-auth-pam-v1
 Submenu: Database
-Version: 10.4.22-3
+Version: 10.4.26-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread mariadb-server +PACKAGE_mariadb-server-plugin-auth-pam-v1:libpam
 Conflicts: 
 Menu-Depends: 
@@ -262,7 +262,7 @@ Category: Utilities
 Repository: base
 Title: mariadb-server plugin
 Maintainer: Michal Hrusecky <Michal@Hrusecky.net>
-Source: mariadb-10.4.22.tar.gz
+Source: mariadb-10.4.26.tar.gz
 License: GPL-2.0-only
 LicenseFiles: COPYING THIRDPARTY
 Type: ipkg
@@ -276,7 +276,7 @@ Michal Hrusecky <Michal@Hrusecky.net>
 
 Package: mariadb-server-plugin-disks
 Submenu: Database
-Version: 10.4.22-3
+Version: 10.4.26-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread mariadb-server
 Conflicts: 
 Menu-Depends: 
@@ -286,7 +286,7 @@ Category: Utilities
 Repository: base
 Title: mariadb-server plugin
 Maintainer: Michal Hrusecky <Michal@Hrusecky.net>
-Source: mariadb-10.4.22.tar.gz
+Source: mariadb-10.4.26.tar.gz
 License: GPL-2.0-only
 LicenseFiles: COPYING THIRDPARTY
 Type: ipkg
@@ -300,7 +300,7 @@ Michal Hrusecky <Michal@Hrusecky.net>
 
 Package: mariadb-server-plugin-feedback
 Submenu: Database
-Version: 10.4.22-3
+Version: 10.4.26-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread mariadb-server
 Conflicts: 
 Menu-Depends: 
@@ -310,7 +310,7 @@ Category: Utilities
 Repository: base
 Title: mariadb-server plugin
 Maintainer: Michal Hrusecky <Michal@Hrusecky.net>
-Source: mariadb-10.4.22.tar.gz
+Source: mariadb-10.4.26.tar.gz
 License: GPL-2.0-only
 LicenseFiles: COPYING THIRDPARTY
 Type: ipkg
@@ -324,7 +324,7 @@ Michal Hrusecky <Michal@Hrusecky.net>
 
 Package: mariadb-server-plugin-file-key-management
 Submenu: Database
-Version: 10.4.22-3
+Version: 10.4.26-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread mariadb-server
 Conflicts: 
 Menu-Depends: 
@@ -334,7 +334,7 @@ Category: Utilities
 Repository: base
 Title: mariadb-server plugin
 Maintainer: Michal Hrusecky <Michal@Hrusecky.net>
-Source: mariadb-10.4.22.tar.gz
+Source: mariadb-10.4.26.tar.gz
 License: GPL-2.0-only
 LicenseFiles: COPYING THIRDPARTY
 Type: ipkg
@@ -348,7 +348,7 @@ Michal Hrusecky <Michal@Hrusecky.net>
 
 Package: mariadb-server-plugin-ha-archive
 Submenu: Database
-Version: 10.4.22-3
+Version: 10.4.26-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread mariadb-server
 Conflicts: 
 Menu-Depends: 
@@ -358,7 +358,7 @@ Category: Utilities
 Repository: base
 Title: mariadb-server plugin
 Maintainer: Michal Hrusecky <Michal@Hrusecky.net>
-Source: mariadb-10.4.22.tar.gz
+Source: mariadb-10.4.26.tar.gz
 License: GPL-2.0-only
 LicenseFiles: COPYING THIRDPARTY
 Type: ipkg
@@ -372,7 +372,7 @@ Michal Hrusecky <Michal@Hrusecky.net>
 
 Package: mariadb-server-plugin-ha-blackhole
 Submenu: Database
-Version: 10.4.22-3
+Version: 10.4.26-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread mariadb-server
 Conflicts: 
 Menu-Depends: 
@@ -382,7 +382,7 @@ Category: Utilities
 Repository: base
 Title: mariadb-server plugin
 Maintainer: Michal Hrusecky <Michal@Hrusecky.net>
-Source: mariadb-10.4.22.tar.gz
+Source: mariadb-10.4.26.tar.gz
 License: GPL-2.0-only
 LicenseFiles: COPYING THIRDPARTY
 Type: ipkg
@@ -396,7 +396,7 @@ Michal Hrusecky <Michal@Hrusecky.net>
 
 Package: mariadb-server-plugin-ha-connect
 Submenu: Database
-Version: 10.4.22-3
+Version: 10.4.26-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread mariadb-server +PACKAGE_mariadb-server-plugin-ha-connect:libxml2
 Conflicts: 
 Menu-Depends: 
@@ -406,7 +406,7 @@ Category: Utilities
 Repository: base
 Title: mariadb-server plugin
 Maintainer: Michal Hrusecky <Michal@Hrusecky.net>
-Source: mariadb-10.4.22.tar.gz
+Source: mariadb-10.4.26.tar.gz
 License: GPL-2.0-only
 LicenseFiles: COPYING THIRDPARTY
 Type: ipkg
@@ -420,7 +420,7 @@ Michal Hrusecky <Michal@Hrusecky.net>
 
 Package: mariadb-server-plugin-ha-federated
 Submenu: Database
-Version: 10.4.22-3
+Version: 10.4.26-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread mariadb-server
 Conflicts: 
 Menu-Depends: 
@@ -430,7 +430,7 @@ Category: Utilities
 Repository: base
 Title: mariadb-server plugin
 Maintainer: Michal Hrusecky <Michal@Hrusecky.net>
-Source: mariadb-10.4.22.tar.gz
+Source: mariadb-10.4.26.tar.gz
 License: GPL-2.0-only
 LicenseFiles: COPYING THIRDPARTY
 Type: ipkg
@@ -444,7 +444,7 @@ Michal Hrusecky <Michal@Hrusecky.net>
 
 Package: mariadb-server-plugin-ha-federatedx
 Submenu: Database
-Version: 10.4.22-3
+Version: 10.4.26-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread mariadb-server
 Conflicts: 
 Menu-Depends: 
@@ -454,7 +454,7 @@ Category: Utilities
 Repository: base
 Title: mariadb-server plugin
 Maintainer: Michal Hrusecky <Michal@Hrusecky.net>
-Source: mariadb-10.4.22.tar.gz
+Source: mariadb-10.4.26.tar.gz
 License: GPL-2.0-only
 LicenseFiles: COPYING THIRDPARTY
 Type: ipkg
@@ -468,7 +468,7 @@ Michal Hrusecky <Michal@Hrusecky.net>
 
 Package: mariadb-server-plugin-ha-sphinx
 Submenu: Database
-Version: 10.4.22-3
+Version: 10.4.26-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread mariadb-server
 Conflicts: 
 Menu-Depends: 
@@ -478,7 +478,7 @@ Category: Utilities
 Repository: base
 Title: mariadb-server plugin
 Maintainer: Michal Hrusecky <Michal@Hrusecky.net>
-Source: mariadb-10.4.22.tar.gz
+Source: mariadb-10.4.26.tar.gz
 License: GPL-2.0-only
 LicenseFiles: COPYING THIRDPARTY
 Type: ipkg
@@ -492,7 +492,7 @@ Michal Hrusecky <Michal@Hrusecky.net>
 
 Package: mariadb-server-plugin-ha-spider
 Submenu: Database
-Version: 10.4.22-3
+Version: 10.4.26-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread mariadb-server
 Conflicts: 
 Menu-Depends: 
@@ -502,7 +502,7 @@ Category: Utilities
 Repository: base
 Title: mariadb-server plugin
 Maintainer: Michal Hrusecky <Michal@Hrusecky.net>
-Source: mariadb-10.4.22.tar.gz
+Source: mariadb-10.4.26.tar.gz
 License: GPL-2.0-only
 LicenseFiles: COPYING THIRDPARTY
 Type: ipkg
@@ -516,7 +516,7 @@ Michal Hrusecky <Michal@Hrusecky.net>
 
 Package: mariadb-server-plugin-handlersocket
 Submenu: Database
-Version: 10.4.22-3
+Version: 10.4.26-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread mariadb-server
 Conflicts: 
 Menu-Depends: 
@@ -526,7 +526,7 @@ Category: Utilities
 Repository: base
 Title: mariadb-server plugin
 Maintainer: Michal Hrusecky <Michal@Hrusecky.net>
-Source: mariadb-10.4.22.tar.gz
+Source: mariadb-10.4.26.tar.gz
 License: GPL-2.0-only
 LicenseFiles: COPYING THIRDPARTY
 Type: ipkg
@@ -540,7 +540,7 @@ Michal Hrusecky <Michal@Hrusecky.net>
 
 Package: mariadb-server-plugin-locales
 Submenu: Database
-Version: 10.4.22-3
+Version: 10.4.26-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread mariadb-server
 Conflicts: 
 Menu-Depends: 
@@ -550,7 +550,7 @@ Category: Utilities
 Repository: base
 Title: mariadb-server plugin
 Maintainer: Michal Hrusecky <Michal@Hrusecky.net>
-Source: mariadb-10.4.22.tar.gz
+Source: mariadb-10.4.26.tar.gz
 License: GPL-2.0-only
 LicenseFiles: COPYING THIRDPARTY
 Type: ipkg
@@ -564,7 +564,7 @@ Michal Hrusecky <Michal@Hrusecky.net>
 
 Package: mariadb-server-plugin-metadata-lock-info
 Submenu: Database
-Version: 10.4.22-3
+Version: 10.4.26-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread mariadb-server
 Conflicts: 
 Menu-Depends: 
@@ -574,7 +574,7 @@ Category: Utilities
 Repository: base
 Title: mariadb-server plugin
 Maintainer: Michal Hrusecky <Michal@Hrusecky.net>
-Source: mariadb-10.4.22.tar.gz
+Source: mariadb-10.4.26.tar.gz
 License: GPL-2.0-only
 LicenseFiles: COPYING THIRDPARTY
 Type: ipkg
@@ -588,7 +588,7 @@ Michal Hrusecky <Michal@Hrusecky.net>
 
 Package: mariadb-server-plugin-query-cache-info
 Submenu: Database
-Version: 10.4.22-3
+Version: 10.4.26-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread mariadb-server
 Conflicts: 
 Menu-Depends: 
@@ -598,7 +598,7 @@ Category: Utilities
 Repository: base
 Title: mariadb-server plugin
 Maintainer: Michal Hrusecky <Michal@Hrusecky.net>
-Source: mariadb-10.4.22.tar.gz
+Source: mariadb-10.4.26.tar.gz
 License: GPL-2.0-only
 LicenseFiles: COPYING THIRDPARTY
 Type: ipkg
@@ -612,7 +612,7 @@ Michal Hrusecky <Michal@Hrusecky.net>
 
 Package: mariadb-server-plugin-query-response-time
 Submenu: Database
-Version: 10.4.22-3
+Version: 10.4.26-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread mariadb-server
 Conflicts: 
 Menu-Depends: 
@@ -622,7 +622,7 @@ Category: Utilities
 Repository: base
 Title: mariadb-server plugin
 Maintainer: Michal Hrusecky <Michal@Hrusecky.net>
-Source: mariadb-10.4.22.tar.gz
+Source: mariadb-10.4.26.tar.gz
 License: GPL-2.0-only
 LicenseFiles: COPYING THIRDPARTY
 Type: ipkg
@@ -636,7 +636,7 @@ Michal Hrusecky <Michal@Hrusecky.net>
 
 Package: mariadb-server-plugin-server-audit
 Submenu: Database
-Version: 10.4.22-3
+Version: 10.4.26-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread mariadb-server
 Conflicts: 
 Menu-Depends: 
@@ -646,7 +646,7 @@ Category: Utilities
 Repository: base
 Title: mariadb-server plugin
 Maintainer: Michal Hrusecky <Michal@Hrusecky.net>
-Source: mariadb-10.4.22.tar.gz
+Source: mariadb-10.4.26.tar.gz
 License: GPL-2.0-only
 LicenseFiles: COPYING THIRDPARTY
 Type: ipkg
@@ -660,7 +660,7 @@ Michal Hrusecky <Michal@Hrusecky.net>
 
 Package: mariadb-server-plugin-simple-password-check
 Submenu: Database
-Version: 10.4.22-3
+Version: 10.4.26-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread mariadb-server
 Conflicts: 
 Menu-Depends: 
@@ -670,7 +670,7 @@ Category: Utilities
 Repository: base
 Title: mariadb-server plugin
 Maintainer: Michal Hrusecky <Michal@Hrusecky.net>
-Source: mariadb-10.4.22.tar.gz
+Source: mariadb-10.4.26.tar.gz
 License: GPL-2.0-only
 LicenseFiles: COPYING THIRDPARTY
 Type: ipkg
@@ -684,7 +684,7 @@ Michal Hrusecky <Michal@Hrusecky.net>
 
 Package: mariadb-server-plugin-sql-errlog
 Submenu: Database
-Version: 10.4.22-3
+Version: 10.4.26-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread mariadb-server
 Conflicts: 
 Menu-Depends: 
@@ -694,7 +694,7 @@ Category: Utilities
 Repository: base
 Title: mariadb-server plugin
 Maintainer: Michal Hrusecky <Michal@Hrusecky.net>
-Source: mariadb-10.4.22.tar.gz
+Source: mariadb-10.4.26.tar.gz
 License: GPL-2.0-only
 LicenseFiles: COPYING THIRDPARTY
 Type: ipkg
@@ -708,7 +708,7 @@ Michal Hrusecky <Michal@Hrusecky.net>
 
 Package: mariadb-server-plugin-wsrep-info
 Submenu: Database
-Version: 10.4.22-3
+Version: 10.4.26-0
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread mariadb-server
 Conflicts: 
 Menu-Depends: 
@@ -718,7 +718,7 @@ Category: Utilities
 Repository: base
 Title: mariadb-server plugin
 Maintainer: Michal Hrusecky <Michal@Hrusecky.net>
-Source: mariadb-10.4.22.tar.gz
+Source: mariadb-10.4.26.tar.gz
 License: GPL-2.0-only
 LicenseFiles: COPYING THIRDPARTY
 Type: ipkg

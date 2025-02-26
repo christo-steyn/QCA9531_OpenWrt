@@ -26,9 +26,9 @@ Package: vim-full
 Submenu: Editors
 Version: 8.2-3
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libncurses
-Conflicts: 
+Conflicts: vim
 Menu-Depends: 
-Provides: 
+Provides: vim
 Section: utils
 Category: Utilities
 Repository: base
@@ -46,9 +46,9 @@ Package: vim-fuller
 Submenu: Editors
 Version: 8.2-3
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libncurses
-Conflicts: 
+Conflicts: vim vim-full
 Menu-Depends: 
-Provides: 
+Provides: vim vim-full
 Section: utils
 Category: Utilities
 Repository: base

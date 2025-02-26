@@ -3,7 +3,7 @@ Build-Depends: zlib lzo openssl
 
 Package: tinc
 Submenu: VPN
-Version: 1.1-git-2
+Version: 1.1-git-3
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +kmod-tun +liblzo +libopenssl +librt +zlib
 Conflicts: 
 Menu-Depends: 

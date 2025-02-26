@@ -4,7 +4,7 @@ Build-Depends/host: ninja/host
 
 Package: mpd-full
 Version: 0.21.26-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +zlib +libcurl +libpthread +libmpdclient +boost +BUILD_NLS:libiconv-full +AUDIO_SUPPORT:alsa-lib +libexpat +libflac +libid3tag +libfaad2 +libopus +AUDIO_SUPPORT:pulseaudio-daemon +libvorbis +libmms +libnpupnp +libshout +yajl +BUILD_PATENTED:libffmpeg +!BUILD_PATENTED:libmad
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +zlib +libcurl +libpthread +libmpdclient +boost +BUILD_NLS:libiconv-full +AUDIO_SUPPORT:alsa-lib +libexpat +libflac +libid3tag +libfaad2 +libopus +AUDIO_SUPPORT:pulseaudio +libvorbis +libmms +libnpupnp +libshout +yajl +BUILD_PATENTED:libffmpeg +!BUILD_PATENTED:libmad
 Conflicts: 
 Menu-Depends: 
 Provides: mpd

@@ -1,0 +1,933 @@
+Package: base-files
+Version: 1-r0-ac4e153
+Depends: libc, netifd, jsonfilter, usign, openwrt-keyring, fstools, fwtool
+Source: package/base-files
+SourceName: base-files
+License: GPL-2.0
+Section: base
+SourceDateEpoch: 1644392351
+Architecture: mips_24kc
+Installed-Size: 55599
+Filename: base-files_1-r0-ac4e153_mips_24kc.ipk
+Size: 56601
+SHA256sum: 634ec32ec820f1802ab49a7f3575cf80282ff415b02b4f96096264723f7ceb83
+Description:  This package contains a base filesystem and system scripts for OpenWrt.
+
+Package: dropbear
+Version: 2020.81-2
+Depends: libc
+Alternatives: 100:/usr/bin/scp:/usr/sbin/dropbear, 100:/usr/bin/ssh:/usr/sbin/dropbear
+Source: package/network/services/dropbear
+SourceName: dropbear
+License: MIT
+LicenseFiles: LICENSE libtomcrypt/LICENSE libtommath/LICENSE
+Section: net
+SourceDateEpoch: 1644392351
+CPE-ID: cpe:/a:matt_johnston:dropbear_ssh_server
+Architecture: mips_24kc
+Installed-Size: 110425
+Filename: dropbear_2020.81-2_mips_24kc.ipk
+Size: 111184
+SHA256sum: da8f5ba1cdc17075b1e04d85c384bde9e84b0746ae61e706623f40e06bbff19f
+Description:  A small SSH2 server/client designed for small memory environments.
+
+Package: fstools
+Version: 2021-01-04-c53b1882-1
+Depends: libc, ubox
+Source: package/system/fstools
+SourceName: fstools
+License: GPL-2.0
+Section: base
+SourceDateEpoch: 1644392351
+Maintainer: John Crispin <john@phrozen.org>
+Architecture: mips_24kc
+Installed-Size: 17461
+Filename: fstools_2021-01-04-c53b1882-1_mips_24kc.ipk
+Size: 18083
+SHA256sum: dd1774d3eb3994c51180bc398211599c1cacb33e7abefa8b19f025d9b016326b
+Description:  OpenWrt filesystem tools
+
+Package: fwtool
+Version: 2019-11-12-8f7fe925-1
+Depends: libc
+Source: package/system/fwtool
+SourceName: fwtool
+License: GPL-2.0
+Section: utils
+SourceDateEpoch: 1644392351
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: mips_24kc
+Installed-Size: 3639
+Filename: fwtool_2019-11-12-8f7fe925-1_mips_24kc.ipk
+Size: 4401
+SHA256sum: c7589d17e1c240d4d3b2b3189592fa967b3cad6ac01bc15dca1cedde1b50b8ce
+Description:  Utility for appending and extracting firmware metadata and signatures
+
+Package: ip6tables
+Version: 1.8.7-1
+Depends: libc, kmod-ip6tables, iptables
+Source: package/network/utils/iptables
+SourceName: ip6tables
+License: GPL-2.0
+Section: net
+SourceDateEpoch: 1644392351
+CPE-ID: cpe:/a:netfilter_core_team:iptables
+Architecture: mips_24kc
+Installed-Size: 218
+Filename: ip6tables_1.8.7-1_mips_24kc.ipk
+Size: 969
+SHA256sum: 0d51935b56d9e27634de82b30483dea405fe21234491c857f79c196e74b2d817
+Description:  IPv6 firewall administration tool
+
+Package: iptables
+Version: 1.8.7-1
+Depends: libc, kmod-ipt-core, libip4tc2, libip6tc2, libxtables12
+Source: package/network/utils/iptables
+SourceName: iptables
+License: GPL-2.0
+Section: net
+SourceDateEpoch: 1644392351
+CPE-ID: cpe:/a:netfilter_core_team:iptables
+Architecture: mips_24kc
+Installed-Size: 21944
+Filename: iptables_1.8.7-1_mips_24kc.ipk
+Size: 22715
+SHA256sum: cca0144f41372f87897b0a1c99560c6682fd25a5190c31967272cb7b0f7b082a
+Description:  IP firewall administration tool.
+ 
+ Matches:
+ - icmp
+ - tcp
+ - udp
+ - comment
+ - conntrack
+ - limit
+ - mac
+ - mark
+ - multiport
+ - set
+ - state
+ - time
+ 
+ Targets:
+ - ACCEPT
+ - CT
+ - DNAT
+ - DROP
+ - REJECT
+ - FLOWOFFLOAD
+ - LOG
+ - MARK
+ - MASQUERADE
+ - REDIRECT
+ - SET
+ - SNAT
+ - TCPMSS
+ 
+ Tables:
+ - filter
+ - mangle
+ - nat
+ - raw
+ 
+
+Package: kmod-ath10k-ct
+Version: 5.4.171+2021-09-22-e6a7d5b5-1
+Depends: kernel (=5.4.171-1-961b65f9afbaad2d5ed2c2edfe6bf168), kmod-mac80211, kmod-ath, kmod-hwmon-core
+Provides: kmod-ath10k
+Source: package/kernel/ath10k-ct
+SourceName: kmod-ath10k-ct
+License: GPLv2
+Section: kernel
+SourceDateEpoch: 1644392351
+Maintainer: Ben Greear <greearb@candelatech.com>
+Architecture: mips_24kc
+Installed-Size: 255274
+Filename: kmod-ath10k-ct_5.4.171+2021-09-22-e6a7d5b5-1_mips_24kc.ipk
+Size: 254095
+SHA256sum: 60882408d7416da3971c6c81e2c15ec2dea2773a3d325d425e0a8b2f3ae3d877
+Description:  ath10k-ct driver optimized for CT ath10k firmware
+
+Package: kmod-ath9k-common
+Version: 5.4.171+5.10.85-1-1
+Depends: kernel (=5.4.171-1-961b65f9afbaad2d5ed2c2edfe6bf168), kmod-ath
+Source: package/kernel/mac80211
+SourceName: kmod-ath9k-common
+Section: kernel
+SourceDateEpoch: 1644392351
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: mips_24kc
+Installed-Size: 132532
+Filename: kmod-ath9k-common_5.4.171+5.10.85-1-1_mips_24kc.ipk
+Size: 129872
+SHA256sum: d9c135e17f9d0f9fc6b4c268ffa391546a29c5ce73bee4256094dd358ea1e895
+Description:  Atheros 802.11n wireless devices (common code for ath9k and ath9k_htc)
+
+Package: kmod-ath9k
+Version: 5.4.171+5.10.85-1-1
+Depends: kernel (=5.4.171-1-961b65f9afbaad2d5ed2c2edfe6bf168), kmod-ath9k-common
+Source: package/kernel/mac80211
+SourceName: kmod-ath9k
+Section: kernel
+SourceDateEpoch: 1644392351
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: mips_24kc
+Installed-Size: 66798
+Filename: kmod-ath9k_5.4.171+5.10.85-1-1_mips_24kc.ipk
+Size: 66892
+SHA256sum: 49462ffc1262dfdee8293fbebde22281c966fcc4ae7303408febd7cd07a55dae
+Description:  This module adds support for wireless adapters based on
+ Atheros IEEE 802.11n AR5008 and AR9001 family of chipsets.
+
+Package: kmod-ath
+Version: 5.4.171+5.10.85-1-1
+Depends: kernel (=5.4.171-1-961b65f9afbaad2d5ed2c2edfe6bf168), kmod-mac80211
+Source: package/kernel/mac80211
+SourceName: kmod-ath
+Section: kernel
+SourceDateEpoch: 1644392351
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: mips_24kc
+Installed-Size: 12822
+Filename: kmod-ath_5.4.171+5.10.85-1-1_mips_24kc.ipk
+Size: 13335
+SHA256sum: 6e52b660df15499aef937d0e661a57b5b763be2b0725c13923133c8e564fbc27
+Description:  This module contains some common parts needed by Atheros Wireless drivers.
+
+Package: kmod-cfg80211
+Version: 5.4.171+5.10.85-1-1
+Depends: kernel (=5.4.171-1-961b65f9afbaad2d5ed2c2edfe6bf168), iw, wireless-regdb
+Source: package/kernel/mac80211
+SourceName: kmod-cfg80211
+Section: kernel
+SourceDateEpoch: 1644392351
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: mips_24kc
+Installed-Size: 169666
+Filename: kmod-cfg80211_5.4.171+5.10.85-1-1_mips_24kc.ipk
+Size: 169953
+SHA256sum: af30552101689766e421df88fe6ae9279d27f94d3960b1f45098340b2b1f128a
+Description:  cfg80211 is the Linux wireless LAN (802.11) configuration API.
+
+Package: kmod-gpio-button-hotplug
+Version: 5.4.171-3
+Depends: kernel (=5.4.171-1-961b65f9afbaad2d5ed2c2edfe6bf168)
+Source: package/kernel/gpio-button-hotplug
+SourceName: kmod-gpio-button-hotplug
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1644392351
+Architecture: mips_24kc
+Installed-Size: 5749
+Filename: kmod-gpio-button-hotplug_5.4.171-3_mips_24kc.ipk
+Size: 6689
+SHA256sum: c25c2a30fdf52130f815eb5eab490012a441570936b9b1c775c576c65fe3eaff
+Description:  This is a replacement for the following in-kernel drivers:
+ 1) gpio_keys (KEYBOARD_GPIO)
+ 2) gpio_keys_polled (KEYBOARD_GPIO_POLLED)
+ 
+ Instead of generating input events (like in-kernel drivers do) it generates
+ uevent-s and broadcasts them. This allows disabling input subsystem which is
+ an overkill for OpenWrt simple needs.
+
+Package: kmod-hwmon-core
+Version: 5.4.171-1
+Depends: kernel (=5.4.171-1-961b65f9afbaad2d5ed2c2edfe6bf168)
+Source: package/kernel/linux
+SourceName: kmod-hwmon-core
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1644392351
+Architecture: mips_24kc
+Installed-Size: 5084
+Filename: kmod-hwmon-core_5.4.171-1_mips_24kc.ipk
+Size: 5722
+SHA256sum: 7545ffd0ca3c31003da0ba79e4745a0cb9bf2e245c008e8f2a3c9df16657bc0d
+Description:  Kernel modules for hardware monitoring
+
+Package: kmod-ip6tables
+Version: 5.4.171-1
+Depends: kernel (=5.4.171-1-961b65f9afbaad2d5ed2c2edfe6bf168), kmod-nf-reject6, kmod-nf-ipt6, kmod-ipt-core
+Source: package/kernel/linux
+SourceName: kmod-ip6tables
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1644392351
+Architecture: mips_24kc
+Installed-Size: 7073
+Filename: kmod-ip6tables_5.4.171-1_mips_24kc.ipk
+Size: 7790
+SHA256sum: 4668e69fd1f4e1ed82e146af165169af5e177b7ef02a8f524f9dbcc83381e1b7
+Description:  Netfilter IPv6 firewalling support
+
+Package: kmod-ipt-conntrack
+Version: 5.4.171-1
+Depends: kernel (=5.4.171-1-961b65f9afbaad2d5ed2c2edfe6bf168), kmod-ipt-core, kmod-nf-conntrack
+Source: package/kernel/linux
+SourceName: kmod-ipt-conntrack
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1644392351
+Architecture: mips_24kc
+Installed-Size: 2631
+Filename: kmod-ipt-conntrack_5.4.171-1_mips_24kc.ipk
+Size: 3445
+SHA256sum: 83bbf286af04835b5e43eea4b2046003a97d6cfcb16c7ac747caa340988f98ab
+Description:  Netfilter (IPv4) kernel modules for connection tracking
+ Includes:
+ - conntrack
+ - defrag
+ - iptables_raw
+ - NOTRACK
+ - state
+
+Package: kmod-ipt-core
+Version: 5.4.171-1
+Depends: kernel (=5.4.171-1-961b65f9afbaad2d5ed2c2edfe6bf168), kmod-nf-reject, kmod-nf-ipt
+Source: package/kernel/linux
+SourceName: kmod-ipt-core
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1644392351
+Architecture: mips_24kc
+Installed-Size: 16142
+Filename: kmod-ipt-core_5.4.171-1_mips_24kc.ipk
+Size: 16919
+SHA256sum: e5a0e9c27bd13892451fe7e259ac8b3d1c46eb3f7a829ff3e299e67dc04cadaf
+Description:  Netfilter core kernel modules
+ Includes:
+ - comment
+ - limit
+ - LOG
+ - mac
+ - multiport
+ - REJECT
+ - TCPMSS
+
+Package: kmod-ipt-nat
+Version: 5.4.171-1
+Depends: kernel (=5.4.171-1-961b65f9afbaad2d5ed2c2edfe6bf168), kmod-ipt-core, kmod-nf-nat
+Source: package/kernel/linux
+SourceName: kmod-ipt-nat
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1644392351
+Architecture: mips_24kc
+Installed-Size: 3951
+Filename: kmod-ipt-nat_5.4.171-1_mips_24kc.ipk
+Size: 4716
+SHA256sum: 50b99b22d9390e3c3224eb520167eef5b7d86a4a17d94bbd8a22212aa6e439d0
+Description:  Netfilter (IPv4) kernel modules for basic NAT targets
+ Includes:
+ - MASQUERADE
+
+Package: kmod-ipt-offload
+Version: 5.4.171-1
+Depends: kernel (=5.4.171-1-961b65f9afbaad2d5ed2c2edfe6bf168), kmod-ipt-core, kmod-nf-flow
+Source: package/kernel/linux
+SourceName: kmod-ipt-offload
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1644392351
+Architecture: mips_24kc
+Installed-Size: 3332
+Filename: kmod-ipt-offload_5.4.171-1_mips_24kc.ipk
+Size: 4080
+SHA256sum: 2caaf463a8045601aac2bc13dc4dae627f3d0fac8da3f4eba5f903dc8daa5621
+Description:  Netfilter routing/NAT offload support
+
+Package: kmod-lib-crc-ccitt
+Version: 5.4.171-1
+Depends: kernel (=5.4.171-1-961b65f9afbaad2d5ed2c2edfe6bf168)
+Source: package/kernel/linux
+SourceName: kmod-lib-crc-ccitt
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1644392351
+Architecture: mips_24kc
+Installed-Size: 2025
+Filename: kmod-lib-crc-ccitt_5.4.171-1_mips_24kc.ipk
+Size: 2796
+SHA256sum: fc90e92e53ae7d495574243efee582fb19c6f5dd71950b7d0e45eec4e45c9bdf
+Description:  Kernel module for CRC-CCITT support
+
+Package: kmod-mac80211
+Version: 5.4.171+5.10.85-1-1
+Depends: kernel (=5.4.171-1-961b65f9afbaad2d5ed2c2edfe6bf168), kmod-cfg80211, hostapd-common
+Source: package/kernel/mac80211
+SourceName: kmod-mac80211
+Section: kernel
+SourceDateEpoch: 1644392351
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: mips_24kc
+Installed-Size: 319641
+Filename: kmod-mac80211_5.4.171+5.10.85-1-1_mips_24kc.ipk
+Size: 317283
+SHA256sum: 56782ed2725054f7d6dcd0e0701ab41099cb6376059cd051970e9f6424f950f2
+Description:  Generic IEEE 802.11 Networking Stack (mac80211)
+
+Package: kmod-mii
+Version: 5.4.171-1
+Depends: kernel (=5.4.171-1-961b65f9afbaad2d5ed2c2edfe6bf168)
+Source: package/kernel/linux
+SourceName: kmod-mii
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1644392351
+Architecture: mips_24kc
+Installed-Size: 3629
+Filename: kmod-mii_5.4.171-1_mips_24kc.ipk
+Size: 4352
+SHA256sum: 7d789c1ffe5ea8c4eff15b332dfbeb4fe161ef75cbae58ab23256ca904e353c1
+Description:  MII library
+
+Package: kmod-nf-conntrack6
+Version: 5.4.171-1
+Depends: kernel (=5.4.171-1-961b65f9afbaad2d5ed2c2edfe6bf168), kmod-nf-conntrack
+Source: package/kernel/linux
+SourceName: kmod-nf-conntrack6
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1644392351
+Architecture: mips_24kc
+Installed-Size: 105
+Filename: kmod-nf-conntrack6_5.4.171-1_mips_24kc.ipk
+Size: 847
+SHA256sum: 91ee26bd653aa6d7522f758747890e86b3a2ccb5a0ad338a72262fe17797cbf9
+Description:  Netfilter IPv6 connection tracking
+
+Package: kmod-nf-conntrack
+Version: 5.4.171-1
+Depends: kernel (=5.4.171-1-961b65f9afbaad2d5ed2c2edfe6bf168)
+Source: package/kernel/linux
+SourceName: kmod-nf-conntrack
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1644392351
+Architecture: mips_24kc
+Installed-Size: 44084
+Filename: kmod-nf-conntrack_5.4.171-1_mips_24kc.ipk
+Size: 44849
+SHA256sum: 11946c5f3ba075fe0bfb2db071b930f5cb0e9d5d9e101db59c17d96940aba72e
+Description:  Netfilter connection tracking
+
+Package: kmod-nf-flow
+Version: 5.4.171-1
+Depends: kernel (=5.4.171-1-961b65f9afbaad2d5ed2c2edfe6bf168), kmod-nf-conntrack
+Source: package/kernel/linux
+SourceName: kmod-nf-flow
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1644392351
+Architecture: mips_24kc
+Installed-Size: 10793
+Filename: kmod-nf-flow_5.4.171-1_mips_24kc.ipk
+Size: 11526
+SHA256sum: 5a27ae6194514efede043c77512894f498194830ea9933ae16babd68c41314c3
+Description:  Netfilter flowtable support
+
+Package: kmod-nf-ipt6
+Version: 5.4.171-1
+Depends: kernel (=5.4.171-1-961b65f9afbaad2d5ed2c2edfe6bf168), kmod-nf-ipt
+Source: package/kernel/linux
+SourceName: kmod-nf-ipt6
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1644392351
+Architecture: mips_24kc
+Installed-Size: 8433
+Filename: kmod-nf-ipt6_5.4.171-1_mips_24kc.ipk
+Size: 9176
+SHA256sum: 74dbca9f14004707f91165cce02462626b7d29e09ffb878b009e90201592992c
+Description:  Ip6tables core
+
+Package: kmod-nf-ipt
+Version: 5.4.171-1
+Depends: kernel (=5.4.171-1-961b65f9afbaad2d5ed2c2edfe6bf168)
+Source: package/kernel/linux
+SourceName: kmod-nf-ipt
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1644392351
+Architecture: mips_24kc
+Installed-Size: 17714
+Filename: kmod-nf-ipt_5.4.171-1_mips_24kc.ipk
+Size: 18488
+SHA256sum: b547b096cd0b6e606e7b3e39e637afc76aa870719a8eb9c04c67deb217c9011f
+Description:  Iptables core
+
+Package: kmod-nf-nat
+Version: 5.4.171-1
+Depends: kernel (=5.4.171-1-961b65f9afbaad2d5ed2c2edfe6bf168), kmod-nf-conntrack
+Source: package/kernel/linux
+SourceName: kmod-nf-nat
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1644392351
+Architecture: mips_24kc
+Installed-Size: 13469
+Filename: kmod-nf-nat_5.4.171-1_mips_24kc.ipk
+Size: 14192
+SHA256sum: fa3b62832f40090967d6fbda2cead2d3e3f48008412d5b3dfbf896e80a8959e6
+Description:  Netfilter NAT
+
+Package: kmod-nf-reject6
+Version: 5.4.171-1
+Depends: kernel (=5.4.171-1-961b65f9afbaad2d5ed2c2edfe6bf168)
+Source: package/kernel/linux
+SourceName: kmod-nf-reject6
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1644392351
+Architecture: mips_24kc
+Installed-Size: 2467
+Filename: kmod-nf-reject6_5.4.171-1_mips_24kc.ipk
+Size: 3237
+SHA256sum: 44c855e559b12f2848125c8aa60bd2698bfe58e305a8e5d148855d7df4875a43
+Description:  Netfilter IPv6 reject support
+
+Package: kmod-nf-reject
+Version: 5.4.171-1
+Depends: kernel (=5.4.171-1-961b65f9afbaad2d5ed2c2edfe6bf168)
+Source: package/kernel/linux
+SourceName: kmod-nf-reject
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1644392351
+Architecture: mips_24kc
+Installed-Size: 2059
+Filename: kmod-nf-reject_5.4.171-1_mips_24kc.ipk
+Size: 2828
+SHA256sum: 1e2ef452b026bc19c5e1d6eb19784d09ec2d04064cd069e8cf5bf4ab0f9ec9f6
+Description:  Netfilter IPv4 reject support
+
+Package: kmod-nls-base
+Version: 5.4.171-1
+Depends: kernel (=5.4.171-1-961b65f9afbaad2d5ed2c2edfe6bf168)
+Source: package/kernel/linux
+SourceName: kmod-nls-base
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1644392351
+Architecture: mips_24kc
+Installed-Size: 3277
+Filename: kmod-nls-base_5.4.171-1_mips_24kc.ipk
+Size: 4027
+SHA256sum: ff901da4410dbbc00ef73b12f11b70c7f674fd5891562df0eee449e3bcf24656
+Description:  Kernel module for NLS (Native Language Support)
+
+Package: kmod-phy-ath79-usb
+Version: 5.4.171-1
+Depends: kernel (=5.4.171-1-961b65f9afbaad2d5ed2c2edfe6bf168), kmod-usb-core
+Source: package/kernel/linux
+SourceName: kmod-phy-ath79-usb
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1644392351
+Architecture: mips_24kc
+Installed-Size: 248
+Filename: kmod-phy-ath79-usb_5.4.171-1_mips_24kc.ipk
+Size: 1001
+SHA256sum: e93b6d631fa584de90a95a7c956103c82a7e1fc1aaa196328d9713f8ca2e2c4f
+Description:  Support for ATH79 USB transceiver
+
+Package: kmod-ppp
+Version: 5.4.171-1
+Depends: kernel (=5.4.171-1-961b65f9afbaad2d5ed2c2edfe6bf168), kmod-lib-crc-ccitt, kmod-slhc
+Source: package/kernel/linux
+SourceName: kmod-ppp
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1644392351
+Architecture: mips_24kc
+Installed-Size: 22518
+Filename: kmod-ppp_5.4.171-1_mips_24kc.ipk
+Size: 23208
+SHA256sum: f4fdf813ffdf7bbe8c1273dd97493b5d17c12b00535279cd1b3541646336a61f
+Description:  Kernel modules for PPP support
+
+Package: kmod-pppoe
+Version: 5.4.171-1
+Depends: kernel (=5.4.171-1-961b65f9afbaad2d5ed2c2edfe6bf168), kmod-ppp, kmod-pppox
+Source: package/kernel/linux
+SourceName: kmod-pppoe
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1644392351
+Architecture: mips_24kc
+Installed-Size: 6892
+Filename: kmod-pppoe_5.4.171-1_mips_24kc.ipk
+Size: 7711
+SHA256sum: 4551e29089d1d795114f675d229044c4e668742d7765f8ba1464cb3d6689a3f4
+Description:  Kernel module for PPPoE (PPP over Ethernet) support
+
+Package: kmod-pppox
+Version: 5.4.171-1
+Depends: kernel (=5.4.171-1-961b65f9afbaad2d5ed2c2edfe6bf168), kmod-ppp
+Source: package/kernel/linux
+SourceName: kmod-pppox
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1644392351
+Architecture: mips_24kc
+Installed-Size: 1641
+Filename: kmod-pppox_5.4.171-1_mips_24kc.ipk
+Size: 2417
+SHA256sum: deb52fb4c09ecf7bc6aa8da8a17f50af243baa2c28a4fd94e2c015118722c072
+Description:  Kernel helper module for PPPoE and PPTP support
+
+Package: kmod-slhc
+Version: 5.4.171-1
+Depends: kernel (=5.4.171-1-961b65f9afbaad2d5ed2c2edfe6bf168), kmod-lib-crc-ccitt
+Source: package/kernel/linux
+SourceName: kmod-slhc
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1644392351
+Architecture: mips_24kc
+Installed-Size: 4041
+Filename: kmod-slhc_5.4.171-1_mips_24kc.ipk
+Size: 4775
+SHA256sum: 570143e1f79002f0a620c237beb0bca6f240e0a94ec4a6255d1461c37454044a
+Description:  Serial Line Header Compression
+
+Package: kmod-usb-core
+Version: 5.4.171-1
+Depends: kernel (=5.4.171-1-961b65f9afbaad2d5ed2c2edfe6bf168), kmod-nls-base
+Source: package/kernel/linux
+SourceName: kmod-usb-core
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1644392351
+Architecture: mips_24kc
+Installed-Size: 90083
+Filename: kmod-usb-core_5.4.171-1_mips_24kc.ipk
+Size: 90661
+SHA256sum: 0daef2723c8f40c6bb65d128d97a5c4545421a57459eacb185918df06264f78f
+Description:  Kernel support for USB
+
+Package: kmod-usb-ehci
+Version: 5.4.171-1
+Depends: kernel (=5.4.171-1-961b65f9afbaad2d5ed2c2edfe6bf168), kmod-usb-core
+Source: package/kernel/linux
+SourceName: kmod-usb-ehci
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1644392351
+Architecture: mips_24kc
+Installed-Size: 24500
+Filename: kmod-usb-ehci_5.4.171-1_mips_24kc.ipk
+Size: 25184
+SHA256sum: c54f7b766c618afabf84de7fb86b4241917d0abaca822147f409dcf3bbd95e15
+Description:  EHCI controller support
+
+Package: kmod-usb-net-cdc-mbim
+Version: 5.4.171-1
+Depends: kernel (=5.4.171-1-961b65f9afbaad2d5ed2c2edfe6bf168), kmod-usb-net, kmod-usb-wdm, kmod-usb-net-cdc-ncm
+Source: package/kernel/linux
+SourceName: kmod-usb-net-cdc-mbim
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1644392351
+Architecture: mips_24kc
+Installed-Size: 3871
+Filename: kmod-usb-net-cdc-mbim_5.4.171-1_mips_24kc.ipk
+Size: 4659
+SHA256sum: 30f87379a66a0c2ac1b45fbb252cc18f949aa4805944adee25a1dc90698cf80f
+Description:  Kernel module for CDC MBIM (Mobile Broadband Interface Model) devices
+
+Package: kmod-usb-net-cdc-ncm
+Version: 5.4.171-1
+Depends: kernel (=5.4.171-1-961b65f9afbaad2d5ed2c2edfe6bf168), kmod-usb-net
+Source: package/kernel/linux
+SourceName: kmod-usb-net-cdc-ncm
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1644392351
+Architecture: mips_24kc
+Installed-Size: 10185
+Filename: kmod-usb-net-cdc-ncm_5.4.171-1_mips_24kc.ipk
+Size: 10954
+SHA256sum: cbb34232cf0cc96ad07ca1ad8f2b68e7c1fe3981db5eb1bba9992315c03a7c0f
+Description:  Kernel support for CDC NCM connections
+
+Package: kmod-usb-net-qmi-wwan
+Version: 5.4.171-1
+Depends: kernel (=5.4.171-1-961b65f9afbaad2d5ed2c2edfe6bf168), kmod-usb-net, kmod-usb-wdm
+Source: package/kernel/linux
+SourceName: kmod-usb-net-qmi-wwan
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1644392351
+Architecture: mips_24kc
+Installed-Size: 8183
+Filename: kmod-usb-net-qmi-wwan_5.4.171-1_mips_24kc.ipk
+Size: 8477
+SHA256sum: 691de26e07dee990f9c7637674de0b0f2d21408eaa15b66b5238ac19b916e27d
+Description:  QMI WWAN driver for Qualcomm MSM based 3G and LTE modems
+
+Package: kmod-usb-net
+Version: 5.4.171-1
+Depends: kernel (=5.4.171-1-961b65f9afbaad2d5ed2c2edfe6bf168), kmod-mii, kmod-usb-core
+Source: package/kernel/linux
+SourceName: kmod-usb-net
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1644392351
+Architecture: mips_24kc
+Installed-Size: 12610
+Filename: kmod-usb-net_5.4.171-1_mips_24kc.ipk
+Size: 13375
+SHA256sum: 0d747b1deecd6bd6e2a000e9efd0dd54227f3677d63d6e7f222f748bd45c83fe
+Description:  Kernel modules for USB-to-Ethernet convertors
+
+Package: kmod-usb-serial-option
+Version: 5.4.171-1
+Depends: kernel (=5.4.171-1-961b65f9afbaad2d5ed2c2edfe6bf168), kmod-usb-serial, kmod-usb-serial-wwan
+Source: package/kernel/linux
+SourceName: kmod-usb-serial-option
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1644392351
+Architecture: mips_24kc
+Installed-Size: 6327
+Filename: kmod-usb-serial-option_5.4.171-1_mips_24kc.ipk
+Size: 6184
+SHA256sum: c8591b4c8897c7a9936e3da99b67eb58346155ff6e95120f137520ab13c59b89
+Description:  Kernel support for Option HSDPA modems
+
+Package: kmod-usb-serial-wwan
+Version: 5.4.171-1
+Depends: kernel (=5.4.171-1-961b65f9afbaad2d5ed2c2edfe6bf168), kmod-usb-serial
+Source: package/kernel/linux
+SourceName: kmod-usb-serial-wwan
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1644392351
+Architecture: mips_24kc
+Installed-Size: 3897
+Filename: kmod-usb-serial-wwan_5.4.171-1_mips_24kc.ipk
+Size: 4649
+SHA256sum: 76b47ce97abf646fdf6cf01309caff976108b2609a1fffb0a7557d9ddf4ded1c
+Description:  Kernel support for USB GSM and CDMA modems
+
+Package: kmod-usb-serial
+Version: 5.4.171-1
+Depends: kernel (=5.4.171-1-961b65f9afbaad2d5ed2c2edfe6bf168), kmod-usb-core
+Source: package/kernel/linux
+SourceName: kmod-usb-serial
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1644392351
+Architecture: mips_24kc
+Installed-Size: 13204
+Filename: kmod-usb-serial_5.4.171-1_mips_24kc.ipk
+Size: 13956
+SHA256sum: 165cb48cca16baa378ab158364daf78049b6afd6634b6693a046c0c8bdc2034c
+Description:  Kernel support for USB-to-Serial converters
+
+Package: kmod-usb-wdm
+Version: 5.4.171-1
+Depends: kernel (=5.4.171-1-961b65f9afbaad2d5ed2c2edfe6bf168), kmod-usb-core
+Source: package/kernel/linux
+SourceName: kmod-usb-wdm
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1644392351
+Architecture: mips_24kc
+Installed-Size: 6465
+Filename: kmod-usb-wdm_5.4.171-1_mips_24kc.ipk
+Size: 7272
+SHA256sum: a651895190567a27a69d1428405dee1a9b3b96799a8fec389bccebd172760fd8
+Description:  USB Wireless Device Management support
+
+Package: kmod-usb2
+Version: 5.4.171-1
+Depends: kernel (=5.4.171-1-961b65f9afbaad2d5ed2c2edfe6bf168), kmod-phy-ath79-usb, kmod-usb-ehci, kmod-usb-core
+Source: package/kernel/linux
+SourceName: kmod-usb2
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1644392351
+Architecture: mips_24kc
+Installed-Size: 8695
+Filename: kmod-usb2_5.4.171-1_mips_24kc.ipk
+Size: 9450
+SHA256sum: 266f265751bf9373d20941666c13ce1565f3ae29923c3b69586656173c6b08d0
+Description:  Kernel support for USB2 (EHCI) controllers
+
+Package: libgcc1
+Version: 8.4.0-3
+Provides: libgcc
+Source: package/libs/toolchain
+SourceName: libgcc
+License: GPL-3.0-with-GCC-exception
+Section: libs
+SourceDateEpoch: 1644392351
+ABIVersion: 1
+Status: unknown hold not-installed
+Essential: yes
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: mips_24kc
+Installed-Size: 34927
+Filename: libgcc1_8.4.0-3_mips_24kc.ipk
+Size: 35777
+SHA256sum: 29cc1b86e6a2bca45fb04c225b2bc18247316c959132daa128b0b0a32bea5f9c
+Description:  GCC support library
+
+Package: libip4tc2
+Version: 1.8.7-1
+Depends: libc, libxtables12
+Provides: libip4tc
+Source: package/network/utils/iptables
+SourceName: libip4tc
+License: GPL-2.0
+Section: libs
+SourceDateEpoch: 1644392351
+ABIVersion: 2
+CPE-ID: cpe:/a:netfilter_core_team:iptables
+Architecture: mips_24kc
+Installed-Size: 18451
+Filename: libip4tc2_1.8.7-1_mips_24kc.ipk
+Size: 19226
+SHA256sum: d33882cc1d3578230d5cbb8370e9bbef6116aa3bddc59e78ac0b2d827541b5da
+Description:  IPv4 firewall - shared libiptc library
+
+Package: libip6tc2
+Version: 1.8.7-1
+Depends: libc, libxtables12
+Provides: libip6tc
+Source: package/network/utils/iptables
+SourceName: libip6tc
+License: GPL-2.0
+Section: libs
+SourceDateEpoch: 1644392351
+ABIVersion: 2
+CPE-ID: cpe:/a:netfilter_core_team:iptables
+Architecture: mips_24kc
+Installed-Size: 18560
+Filename: libip6tc2_1.8.7-1_mips_24kc.ipk
+Size: 19328
+SHA256sum: 56a35cf0019196242648bb777a876cf03a40af4e72a65bed2feed04af6a5271d
+Description:  IPv6 firewall - shared libiptc library
+
+Package: libpthread
+Version: 1.1.24-3
+Depends: libgcc1
+Source: package/libs/toolchain
+SourceName: libpthread
+License: GPL-3.0-with-GCC-exception
+Section: libs
+SourceDateEpoch: 1644392351
+Status: unknown hold not-installed
+Essential: yes
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: mips_24kc
+Installed-Size: 124
+Filename: libpthread_1.1.24-3_mips_24kc.ipk
+Size: 894
+SHA256sum: ace0e29c3f1878563c576c5980e88c0be1ff68d6d0db0b82cae968a6f3b77665
+Description:  POSIX thread library
+
+Package: librt
+Version: 1.1.24-3
+Depends: libpthread
+Source: package/libs/toolchain
+SourceName: librt
+License: GPL-3.0-with-GCC-exception
+Section: libs
+SourceDateEpoch: 1644392351
+Status: unknown hold not-installed
+Essential: yes
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: mips_24kc
+Installed-Size: 124
+Filename: librt_1.1.24-3_mips_24kc.ipk
+Size: 904
+SHA256sum: 8a36271d69426706a1c1487ca7902d71b3c53a8a34a089afdf75af175e34f966
+Description:  POSIX.1b RealTime extension library
+
+Package: libxtables12
+Version: 1.8.7-1
+Depends: libc
+Provides: libxtables
+Source: package/network/utils/iptables
+SourceName: libxtables
+License: GPL-2.0
+Section: libs
+SourceDateEpoch: 1644392351
+ABIVersion: 12
+CPE-ID: cpe:/a:netfilter_core_team:iptables
+Architecture: mips_24kc
+Installed-Size: 40610
+Filename: libxtables12_1.8.7-1_mips_24kc.ipk
+Size: 41424
+SHA256sum: 4649ce04a786accc9a04f553a634e9ed62737d44e7bee988e2fa5f19781ce7bf
+Description:  IPv4/IPv6 firewall - shared xtables library
+
+Package: mtd
+Version: 26
+Depends: libc, libubox20210516
+Source: package/system/mtd
+SourceName: mtd
+License: GPL-2.0+
+Section: utils
+SourceDateEpoch: 1644392351
+Architecture: mips_24kc
+Installed-Size: 13879
+Filename: mtd_26_mips_24kc.ipk
+Size: 14635
+SHA256sum: 2004e1632b9cfb765cd19aeaea93583472095a1561c8ec36b823e60174cb5e3f
+Description:  This package contains an utility useful to upgrade from other firmware or 
+ older OpenWrt releases.
+
+Package: uboot-envtools
+Version: 2021.01-1
+Depends: libc
+Source: package/boot/uboot-envtools
+SourceName: uboot-envtools
+License: GPL-2.0 GPL-2.0+
+LicenseFiles: Licenses/README
+Section: utils
+SourceDateEpoch: 1644392351
+Architecture: mips_24kc
+Installed-Size: 12873
+Filename: uboot-envtools_2021.01-1_mips_24kc.ipk
+Size: 13627
+SHA256sum: 10fefb6b7d7049e9159faee3338b378f632d6a44d5967fa0ab60ea12db9adc7c
+Description:  This package includes tools to read and modify U-Boot bootloader environment.
+
+Package: umbim
+Version: 2019-09-11-184b707d-1
+Depends: libc, libubox20210516, kmod-usb-net, kmod-usb-net-cdc-mbim, wwan
+Source: package/network/utils/umbim
+SourceName: umbim
+License: GPL-2.0
+Section: net
+SourceDateEpoch: 1644392351
+Maintainer: John Crispin <john@phrozen.org>
+Architecture: mips_24kc
+Installed-Size: 12727
+Filename: umbim_2019-09-11-184b707d-1_mips_24kc.ipk
+Size: 13584
+SHA256sum: bcc58db154e32b158312b7dc3529f221c2e2248591e7bc71b021cc35fb82326b
+Description:  umbim is a command line tool for controlling mobile broadband modems using
+ the MBIM-protocol.
+
+Package: uqmi
+Version: 2020-11-22-0a19b5b7-3
+Depends: libc, libubox20210516, libblobmsg-json20210516, kmod-usb-net, kmod-usb-net-qmi-wwan, wwan
+Source: package/network/utils/uqmi
+SourceName: uqmi
+License: GPL-2.0
+Section: net
+SourceDateEpoch: 1644392351
+Maintainer: Matti Laakso <malaakso@elisanet.fi>
+Architecture: mips_24kc
+Installed-Size: 24849
+Filename: uqmi_2020-11-22-0a19b5b7-3_mips_24kc.ipk
+Size: 25663
+SHA256sum: 88cf4f8ce9c00dd7f9863f221e5939f7956a817eaf64e635253906ee6949eb5c
+Description:  uqmi is a command line tool for controlling mobile broadband modems using
+ the QMI-protocol.
+
